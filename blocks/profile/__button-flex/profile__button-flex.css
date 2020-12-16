@@ -1,0 +1,11 @@
+.profile__button-flex {
+    align-self: center;
+    margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+    .profile__button-flex {
+        margin-left: 0;
+        align-self: center;
+
+    }
+}

@@ -1,0 +1,7 @@
+.element__likes {
+    background-image: url('../../../images/likes.svg');
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 19px;
+    align-self: center;
+}
