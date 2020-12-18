@@ -1,4 +1,5 @@
 .profile__info {
     border: 1px solid gery;
-    
+    display: flex;
+    align-self: center;
 }

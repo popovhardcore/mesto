@@ -4,4 +4,8 @@
     width: 21px;
     height: 19px;
     align-self: center;
+    display: block;
+}
+.element__likes:hover {
+    opacity: 0.5;
 }

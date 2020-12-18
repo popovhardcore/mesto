@@ -1,0 +1,6 @@
+.form__handler { 
+ background-color: black;
+ border: 0;
+ height: 50px;
+ display: flex;
+}
