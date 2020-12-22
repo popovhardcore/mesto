@@ -8,7 +8,9 @@
 
 @media screen and (max-width: 600px) {
     .header__logo {
-    
+    width: 103px;
+    height: 24px;
+    background-size: cover;
     margin: 28px 0 31px 27px;
 
     }

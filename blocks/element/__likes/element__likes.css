@@ -1,11 +1,18 @@
 .element__likes {
     background-image: url('../../../images/likes.svg');
+    background-color: transparent;
+    border: 0;
     background-repeat: no-repeat;
     width: 21px;
     height: 19px;
     align-self: center;
     display: block;
 }
+/* .element__likes:active {
+    background-image: url('../../../images/likesblack.svg');
+    
+} */
 .element__likes:hover {
-    opacity: 0.5;
+    background-image: url('../../../images/likesblack.svg');
+    /* opacity: 0.5; */
 }

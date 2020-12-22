@@ -4,4 +4,16 @@
  border: 0;
  height: 50px;
  display: flex;
+ border-radius: 2px;
+}
+.popup__form-handler:hover {
+    opacity: 0.8;
+}
+@media screen and (max-width: 320px) {
+    .popup__form-handler {
+    
+    width: 238px;
+    height: 46px;
+
+    }
 }

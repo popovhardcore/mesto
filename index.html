@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
-    <title>Путешествия, интересные места</title>
-</head>
-<body class="root">
-  <div class="page">
-      <header class="header">
-          <div class="header__logo"></div>
-          <div class="header__line"></div>
-      </header>
-      <section class="profile">
-          <img class="profile__avatar" src="images/user-photo.jpg" alt="фото пользователя">
-          <div class="profile__info">
-                <div class="profile__box">
-                    <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <p class="profile__description">Исследователь океана</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="pages/index.css" />
+        <title>Путешествия, интересные места</title>
+    </head>
+    <body class="root">
+        <div class="page">
+            <header class="header">
+                <div class="header__logo"></div>
+                <!-- <div class="header__line"></div> -->
+            </header>
+            <main class="main">
+                <section class="profile">
+                    <img class="profile__avatar" src="images/user-photo.jpg" alt="фото пользователя" />
+                    <div class="profile__info">
+                        <div class="profile__box">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <p class="profile__description">Исследователь океана</p>
+                        </div>
+                        <!-- <a class="profile__edit-button" href="#popup" target="_self"></a> -->
+                        <button class="profile__edit-button" type="button"></button>
+                    </div>
+                    <!-- <a class="profile__button" href="#" target="_self"></a> -->
+                    <button class="profile__button" type="button"></button>
+                </section>
+                <section class="elements">
+                    <article class="element">
+                        <img class="element__image" src="images/Karachay-Cherkessk.jpg" alt="Карачаево-черкессия" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Карачаево-черкессия</h2>
+                            <!-- <a class="element__likes" href="#" target="_self"></a> -->
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                    <article class="element">
+                        <img class="element__image" src="images/elbrus.jpg" alt="Гора Эльбрус" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Гора Эльбрус</h2>
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                    <article class="element">
+                        <img class="element__image" src="images/dombay.jpg" alt="Домбай" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Домбай</h2>
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                    <article class="element">
+                        <img class="element__image" src="images/karachay-cherkessk.jpg" alt="Карачаево-черкессия" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Карачаево-черкессия</h2>
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                    <article class="element">
+                        <img class="element__image" src="images/karachay-cherkessk.jpg" alt="Карачаево-черкессия" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Карачаево-черкессия</h2>
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                    <article class="element">
+                        <img class="element__image" src="images/karachay-cherkessk.jpg" alt="Карачаево-черкессия" />
+                        <div class="element__flexbox">
+                            <h2 class="element__title">Карачаево-черкессия</h2>
+                            <button class="element__likes" type="button"></button>
+                        </div>
+                    </article>
+                </section>
+            </main>
+            <footer class="footer">
+                <p class="footer__copy">© 2020 Mesto Russia</p>
+            </footer>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <!-- <a href="#popup" class="popup__close" target="_self"></a> -->
+                    <button class="popup__close" type="button"></button>
+                    <form class="popup__form" name="form">
+                        <h2 class="popup__form-heading">Редактировать профиль</h2>
+                        <fieldset class="popup__form-input-container">
+                            <input class="popup__form-item popup__form-nameinput" id="popup__form-nameinput" name="form-name" type="text" placeholder="Жак-Ив Кусто" value="Жак-Ив Кусто" />
+                            <input class="popup__form-item popup__form-jobinput" id="popup__form-jobinput" name="form-job" type="text" placeholder="Исследователь океана" value="Исследователь океана" />
+                        </fieldset>
+                        <div class="popup__form-handler">
+                            <!-- <input  class="popup__form-button" type="submit" value="Сохранить"> -->
+                            <button class="popup__form-button" type="submit">Сохранить</button>
+                        </div>
+                    </form>
                 </div>
-              <a class="profile__edit-button" href="#popup" target="_self"></a>
-          </div>
-          <a class="profile__button" href="#" target="_self"></a>
-      </section>
-      <section class="elements">
-        <div class="element">
-            <img class="element__image" src="images/Karachay-Cherkessk.jpg" alt="Карачаево-черкессия">
-            <div class="element__flexbox">
-            <p class="element__title">Карачаево-черкессия</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
+            </div>
         </div>
-        <div class="element">
-            <img class="element__image" src="images/elbrus.jpg" alt="Гора Эльбрус">
-            <div class="element__flexbox">
-            <p class="element__title">Гора Эльбрус</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
-        </div>
-        <div class="element">
-            <img class="element__image" src="images/dombay.jpg" alt="Домбай">
-            <div class="element__flexbox">
-            <p class="element__title">Домбай</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
-        </div>
-        <div class="element">
-            <img class="element__image" src="images/Karachay-Cherkessk.jpg" alt="Карачаево-черкессия">
-            <div class="element__flexbox">
-            <p class="element__title">Карачаево-черкессия</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
-        </div>
-        <div class="element">
-            <img class="element__image" src="images/Karachay-Cherkessk.jpg" alt="Карачаево-черкессия">
-            <div class="element__flexbox">
-            <p class="element__title">Карачаево-черкессия</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
-        </div>
-        <div class="element">
-            <img class="element__image" src="images/Karachay-Cherkessk.jpg" alt="Карачаево-черкессия">
-            <div class="element__flexbox">
-            <p class="element__title">Карачаево-черкессия</p>
-            <a class="element__likes" href="#" target="_blank"></a>
-           </div>
-        </div>
-        </section>
-      <footer class="footer">
-          <p class="footer__copy">© 2020 Mesto Russia</p>
-      </footer>
-  </div>
-    <div id="popup" class="popup">
-      <div class="popup__body">
-          <div class="popup__content">
-              <a href="#popup" class="popup__close" target="_self"></a>
-            <form class="popup__form">
-                <h2 class="popup__form-heading">Редактировать профиль</h2>
-                <fieldset class="popup__form-input-container">
-                    <input class="popup__form-item popup__form-nameinput" type="text" placeholder="Жак-Ив Кусто" value="Жак-Ив Кусто">
-                    <input class="popup__form-item popup__form-jobinput" type="text" placeholder="Исследователь океана" value="Исследователь океана">
-                </fieldset>
-                <fieldset class="popup__form-handler">
-                    <input  class="popup__form-button" type="submit" value="Сохранить">
-                </fieldset>
-            </form>
-          </div>
-      </div>
-  </div>
-   <script src="pages/index.js"></script>
-</body>
+        <script src="scripts/index.js"></script>
+    </body>
 </html>

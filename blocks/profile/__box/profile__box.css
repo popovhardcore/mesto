@@ -1,3 +1,8 @@
 .profile__box {
     padding: 0 18px 0 50px;
 }
+@media screen and (max-width: 320px) {
+    .profile__box {
+        padding: 0 10px 0 0;
+    }
+}
