@@ -54,8 +54,10 @@
 let popup = document.querySelector('.popup');
 let popupClose = document.querySelector('.popup__close');
 let editButton = document.querySelector('.profile__edit-button');
-let nameInput =  document.querySelector('.popup__form-nameinput');
-let jobInput = document.querySelector('.popup__form-jobinput');
+// let nameInput =  document.querySelector('.popup__form-nameinput');
+// let jobInput = document.querySelector('.popup__form-jobinput');
+let nameInput = document.getElementById('popup__form-nameinput');
+let jobInput = document.getElementById('popup__form-jobinput');
 let form = document.querySelector('.popup__form');
 let profileName = document.querySelector('.profile__name');
 let profileDescription = document.querySelector('.profile__description');
