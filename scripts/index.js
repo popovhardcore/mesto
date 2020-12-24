@@ -62,6 +62,9 @@ let profileDescription = document.querySelector('.profile__description');
 
 editButton.addEventListener('click', function() {
     popup.classList.add('popup_opened');
+    // 
+    profileName.textContent = nameInput.value;
+    profileDescription.textContent = jobInput.value;
 });
 
 popupClose.addEventListener('click', function() {

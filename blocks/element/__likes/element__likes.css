@@ -8,11 +8,13 @@
     align-self: center;
     display: block;
 }
-/* .element__likes:active {
-    background-image: url('../../../images/likesblack.svg');
-    
-} */
 .element__likes:hover {
-    background-image: url('../../../images/likesblack.svg');
-    /* opacity: 0.5; */
+    
+    opacity: 0.5;
 }
+.element__likes:active {
+    background-image: url('../../../images/likesblack.svg');
+    opacity: 1;
+} 
+
+
