@@ -1,0 +1,13 @@
+.element__trash-icon {
+     width: 19px;
+     height: 21px;
+     position: absolute;
+     top: 18px;
+     left: 249px;
+    background-image: url('../../../images/trash.svg') ;
+}
+
+.element__trash-icon:hover {
+    
+    opacity: 0.5;
+}

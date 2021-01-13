@@ -17,6 +17,7 @@
 @import "../blocks/element/__image/element__image.css";
 @import "../blocks/element/__title/element__title.css";
 @import "../blocks/element/__likes/element__likes.css";
+@import "../blocks/element/__likes-active/element__likes-active.css";
 @import "../blocks/element/__flexbox/element__flexbox.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copy/footer__copy.css";
@@ -30,3 +31,10 @@
 @import "../blocks/popup/__form-handler/popup__form-handler.css";
 @import "../blocks/popup/__form-button/popup__form-button.css";
 @import "../blocks/popup/_opened/popup_opened.css";
+@import "../blocks/popup-img/popup-img.css";
+@import "../blocks/popup-img/__body/popup-img__body.css";
+@import "../blocks/popup-img/__close/popup-img__close.css";
+@import"../blocks/popup-img/__content/popup-img__content.css";
+@import"../blocks/popup-img/__image/popup__image.css";
+@import"../blocks/popup-img/__heading/popup-img__heading.css";
+@import"../blocks/element/__trash-icon/element__trash-icon.css";
