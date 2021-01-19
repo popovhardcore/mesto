@@ -6,6 +6,13 @@
      left: 249px;
     background-image: url('../../../images/trash.svg');
     background-repeat: no-repeat;
+
+
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }
 
 .element__trash-icon:hover {
