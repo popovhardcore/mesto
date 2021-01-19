@@ -23,31 +23,20 @@
                     </div>
                     <button class="profile__button" type="button"></button>
                 </section>
-                
+
                 <section class="elements">
                     <template id="card__element">
-                    <article class="element">
-                        <batton class="element__trash-icon" type="button"></batton>
-                        <img class="element__image" src="images/karachay-cherkessk.jpg" />
-                        <div class="element__flexbox">
-                            <h2 class="element__title">Карачаево-черкессия</h2>
-                            <button class="element__likes" type="button"></button>
-                        </div>
-                    </article>
-                </template>
+                        <article class="element">
+                            <batton class="element__trash-icon" type="button"></batton>
+                            <img class="element__image" src="images/karachay-cherkessk.jpg" />
+                            <div class="element__flexbox">
+                                <h2 class="element__title">Карачаево-черкессия</h2>
+                                <button class="element__likes" type="button"></button>
+                            </div>
+                        </article>
+                    </template>
 
-
-                     <article class="element">
-                        <batton class="element__trash-icon" type="button"></batton>
-                        <img class="element__image" src="images/karachay-cherkessk.jpg" alt="Карачаево-черкессия" />
-                        <div class="element__flexbox">
-                            <h2 class="element__title">Карачаево-черкессия</h2>
-                            <button class="element__likes" type="button"></button>
-                        </div>
-                    </article>
-
-
-                 <!-- <article class="element">
+                    <!-- <article class="element">
                         <img class="element__image" src="images/elbrus.jpg" alt="Гора Эльбрус" />
                         <div class="element__flexbox">
                             <h2 class="element__title">Гора Эльбрус</h2>
@@ -84,7 +73,6 @@
                             <button class="element__likes" type="button"></button>
                         </div>
                     </article>   -->
-
                 </section>
             </main>
             <footer class="footer">
@@ -112,11 +100,11 @@
             <div class="popup__body">
                 <div class="popup__content">
                     <button id="closecard" class="popup__close" type="button"></button>
-                    <form   id="form-card" class="popup__form" name="form">
+                    <form id="form-card" class="popup__form" name="form">
                         <h2 class="popup__form-heading">Новое место</h2>
                         <fieldset class="popup__form-input-container">
-                            <input class="popup__form-item" id="popup__form-nameinput-card" name="form-name-card" type="text" placeholder="Название"  />
-                            <input class="popup__form-item" id="popup__form-link" name="form-link" type="text" placeholder="Сылка на картинку"  />
+                            <input class="popup__form-item" id="popup__form-nameinput-card" name="form-name-card" type="text" placeholder="Название" />
+                            <input class="popup__form-item" id="popup__form-link" name="form-link" type="text" placeholder="Сылка на картинку" />
                         </fieldset>
                         <div class="popup__form-handler">
                             <button class="popup__form-button" type="submit">Сохранить</button>
@@ -128,21 +116,17 @@
         <div id="popup-img" class="popup-img">
             <div class="popup-img__body">
                 <div class="popup-img__content">
-                    <button id="closecard" class="popup-img__close" type="button"></button>
-                        <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg">
-                        <h2 class="popup-img__heading">Hазвание места</h2>
-                    </div>
+                    <button id="closecardimg" class="popup-img__close" type="button"></button>
+                    <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg" />
+                    <h2 class="popup-img__heading">Hазвание места</h2>
+                </div>
             </div>
         </div>
-
-
-
 
         <script src="scripts/popup-image.js"></script>
         <script src="scripts/addcard.js"></script>
         <script src="scripts/initial.js"></script>
         <script src="scripts/index.js"></script>
         <script src="scripts/likes.js"></script>
-
     </body>
 </html>

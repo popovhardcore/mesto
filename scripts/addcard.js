@@ -6,7 +6,10 @@ let popupFormNameInputCard = document.getElementById('popup__form-nameinput-card
 let popupFormLink = document.getElementById('popup__form-link');
 let formCard = document.getElementById('form-card');
 let elementImage = document.querySelector('.element__image');
-let elementTitle = document.querySelector('.element__title');
+
+
+
+let elementThashIcon = document.querySelectorAll('.element__trash-icon');
 
 profileButton.addEventListener('click', function (){
 popupAddCard.classList.add('popup_opened');
@@ -27,3 +30,6 @@ function hadleCardSubmit (evt) {
 };
 
 formCard.addEventListener('submit', hadleCardSubmit);
+
+
+  

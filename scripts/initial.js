@@ -37,12 +37,33 @@ function addCard(item) {
     card.querySelector('.element__likes').addEventListener('click', function (evt) {
         const eventTarget = evt.target;
         eventTarget.classList.toggle('element__likes-active');
+          
+    });
+    card.querySelector('.element__trash-icon').addEventListener('click', function (evt) {
+      const eventTarget = evt.target;
+      eventTarget.parentNode.remove();
+    });
+    card.querySelector('.element__image').addEventListener('click', function() {
+      showPopupCard(item);
+      // card.querySelector('.popup-img').classList.add('popup_opened');
     });
     elementСontainer.prepend(card);
     
 }
+
+function showPopupCard(item) {
+  let popup = document.querySelector('#popup-img');
+  popup.querySelector('.popup__image').src = item.link
+  popup.querySelector('.popup-img__heading').textContent = item.name;
+  popup.classList.add('popup_opened');
+  
+}
+
 for (let i = 0; i < initialCards.length; i++) {
     addCard(initialCards[i]);
 }
 
-
+let popupImgCloseCard = document.querySelector('#closecardimg');
+popupImgCloseCard.addEventListener('click', function () {
+    document.querySelector('#popup-img').classList.remove('popup_opened');
+});
