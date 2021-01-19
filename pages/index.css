@@ -35,6 +35,6 @@
 @import "../blocks/popup-img/__body/popup-img__body.css";
 @import "../blocks/popup-img/__close/popup-img__close.css";
 @import"../blocks/popup-img/__content/popup-img__content.css";
-@import"../blocks/popup-img/__image/popup__image.css";
+@import"../blocks/popup-img/__image/popup-img__image.css";
 @import"../blocks/popup-img/__heading/popup-img__heading.css";
 @import"../blocks/element/__trash-icon/element__trash-icon.css";

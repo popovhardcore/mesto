@@ -34,6 +34,7 @@ function addCard(item) {
     const card = template.cloneNode(true);
     card.querySelector('.element__title').textContent = item.name;
     card.querySelector('.element__image').src = item.link;
+    card.querySelector('.element__image').alt = item.name;
     card.querySelector('.element__likes').addEventListener('click', function (evt) {
         const eventTarget = evt.target;
         eventTarget.classList.toggle('element__likes-active');
@@ -53,7 +54,8 @@ function addCard(item) {
 
 function showPopupCard(item) {
   let popup = document.querySelector('#popup-img');
-  popup.querySelector('.popup__image').src = item.link
+  popup.querySelector('.popup-img__image').src = item.link;
+  popup.querySelector('.popup-img__image').alt = item.name;
   popup.querySelector('.popup-img__heading').textContent = item.name;
   popup.classList.add('popup_opened');
   
