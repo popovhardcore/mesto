@@ -17,14 +17,14 @@ closeCard.addEventListener('click', function() {
 
 formCard.addEventListener('submit', function (evt) {
     evt.preventDefault();
-    let name = document.getElementById("popup__form-nameinput-card").value;
-    let link = document.getElementById("popup__form-link").value;
+    const nameFormField = document.getElementById("popup__form-nameinput-card");
+    const linkFormField = document.getElementById("popup__form-link");
 
-    addCard({name: name, link: link });
+    addCard({name: nameFormField.value, link: linkFormField.value });
      
     popupClose(popupAddCard);
-    name.value = '';
-    link.value = '';
+    nameFormField.value = '';
+    linkFormField.value = '';
 });
 
 editButton.addEventListener('click', function() {
@@ -47,9 +47,10 @@ form.addEventListener('submit', function (evt){
 function addCard(item) {
     const template = document.querySelector('#card__element').content;
     const card = template.cloneNode(true);
+    const cardImage = card.querySelector('.element__image');
     card.querySelector('.element__title').textContent = item.name;
-    card.querySelector('.element__image').src = item.link;
-    card.querySelector('.element__image').alt = item.name;
+    cardImage.src = item.link;
+    cardImage.alt = item.name;
     card.querySelector('.element__likes').addEventListener('click', function (evt) {
         const eventTarget = evt.target;
         eventTarget.classList.toggle('element__likes-active');
