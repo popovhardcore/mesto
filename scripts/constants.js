@@ -39,3 +39,5 @@ const popupCloseButton = document.querySelector('.popup-profile-close-btn');
 const form = document.querySelector('.popup-profile__form');
 const popupImgCloseCard = document.querySelector('#closecardimg');
 const elementСontainer = document.querySelector('.elements');
+const popupImg = document.querySelector('#popup-img');
+const popupImgPicture = popupImg.querySelector('.popup-img__image');
