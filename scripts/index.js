@@ -3,7 +3,7 @@ function openPopup(popup) {
     popup.classList.add('popup_opened');
 };
 
-function popupClose(popup) {
+function closePopup(popup) {
     popup.classList.remove('popup_opened');
 };
 
@@ -12,7 +12,7 @@ profileButton.addEventListener('click', function (){
 });
 
 closeCard.addEventListener('click', function() {
-    popupClose(popupAddCard);
+    closePopup(popupAddCard);
 });
 
 formCard.addEventListener('submit', function (evt) {
@@ -22,7 +22,7 @@ formCard.addEventListener('submit', function (evt) {
 
     addCard({name: nameFormField.value, link: linkFormField.value });
      
-    popupClose(popupAddCard);
+    closePopup(popupAddCard);
     nameFormField.value = '';
     linkFormField.value = '';
 });
@@ -34,14 +34,14 @@ editButton.addEventListener('click', function() {
 });
 
 popupCloseButton.addEventListener('click', function() {
-    popupClose(popupProfile);
+    closePopup(popupProfile);
 });
 
 formProfile.addEventListener('submit', function (evt){
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
-    popupClose(popupProfile);
+    closePopup(popupProfile);
 }); 
 
 function addCard(item) {
@@ -79,7 +79,7 @@ function showPopupCard(item) {
 }
 
 popupImgCloseCard.addEventListener('click', function () {
-    popupClose(popupImg);
+    closePopup(popupImg);
 });
 
 for (let i = 0; i < initialCards.length; i++) {
