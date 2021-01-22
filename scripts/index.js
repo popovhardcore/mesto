@@ -1,5 +1,5 @@
 
-function popupOpen(popup) {
+function openPopup(popup) {
     popup.classList.add('popup_opened');
 };
 
@@ -8,7 +8,7 @@ function popupClose(popup) {
 };
 
 profileButton.addEventListener('click', function (){
-    popupOpen(popupAddCard);
+    openPopup(popupAddCard);
 });
 
 closeCard.addEventListener('click', function() {
@@ -30,7 +30,7 @@ formCard.addEventListener('submit', function (evt) {
 editButton.addEventListener('click', function() {
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
-    popupOpen(popupProfile);
+    openPopup(popupProfile);
 });
 
 popupCloseButton.addEventListener('click', function() {
@@ -75,7 +75,7 @@ function showPopupCard(item) {
   popupImgPicture.src = item.link;
   popupImgPicture.alt = item.name;
   popupImg.querySelector('.popup-img__heading').textContent = item.name;
-  popupOpen(popupImg);
+  openPopup(popupImg);
 }
 
 popupImgCloseCard.addEventListener('click', function () {
