@@ -17,8 +17,7 @@ closeCard.addEventListener('click', function() {
 
 formCard.addEventListener('submit', function (evt) {
     evt.preventDefault();
-    const nameFormField = document.getElementById("popup__form-nameinput-card");
-    const linkFormField = document.getElementById("popup__form-link");
+    
 
     addCard({name: nameFormField.value, link: linkFormField.value });
      
@@ -50,8 +49,8 @@ function addCard(item) {
 }
 
 function createCard(item) {
-    const template = document.querySelector('#card__element').content;
-    const card = template.cloneNode(true);
+    
+    const card = template.content.cloneNode(true);
     const cardImage = card.querySelector('.element__image');
     card.querySelector('.element__title').textContent = item.name;
     cardImage.src = item.link;

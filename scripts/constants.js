@@ -23,12 +23,16 @@ const initialCards = [
       name: 'Байкал',
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
     }
-  ]; 
+  ];
 
-const profileButton = document.querySelector('.profile__button');
+
+const template = document.querySelector('#card__element');
 const popupAddCard = document.querySelector('.popup-addcard');
-const closeCard = document.getElementById('closecard');
 const formCard = document.getElementById('form-card');
+const nameFormField = document.getElementById("popup__form-nameinput-card");
+const linkFormField = document.getElementById("popup__form-link");
+const closeCard = document.getElementById('closecard');
+const profileButton = document.querySelector('.profile__button');
 const editButton = document.querySelector('.profile__edit-button');
 const nameInput = document.getElementById('popup__form-nameinput');
 const jobInput = document.getElementById('popup__form-jobinput');
