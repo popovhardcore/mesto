@@ -62,7 +62,7 @@ function createCard(item) {
     });
     card.querySelector('.element__trash-icon').addEventListener('click', function (evt) {
         const eventTarget = evt.target;
-        eventTarget.parentNode.remove();
+        eventTarget.closest('.element').remove()
     });
     card.querySelector('.element__image').addEventListener('click', function () {
         showPopupCard(item);
