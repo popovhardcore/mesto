@@ -37,7 +37,7 @@ popupCloseButton.addEventListener('click', function() {
     popupClose(popupProfile);
 });
 
-form.addEventListener('submit', function (evt){
+formProfile.addEventListener('submit', function (evt){
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
