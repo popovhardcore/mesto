@@ -30,18 +30,18 @@ formCard.addEventListener('submit', function (evt) {
 editButton.addEventListener('click', function() {
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
-    popupOpen(popup);
+    popupOpen(popupProfile);
 });
 
 popupCloseButton.addEventListener('click', function() {
-    popupClose(popup);
+    popupClose(popupProfile);
 });
 
 form.addEventListener('submit', function (evt){
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
-    popupClose(popup);
+    popupClose(popupProfile);
 }); 
 
 function addCard(item) {
